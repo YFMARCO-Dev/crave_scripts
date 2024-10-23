@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone -b orion-14 https://github.com/ij-israfil/local_manifests .repo/local_manifests
+ git clone https://github.com/YFMARCO-Dev/crave_manifest.git --depth 1 -b orion-14 .repo/local_manifests 
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -19,9 +19,8 @@ echo "============================"
 echo "============================"
 
 # Export
-export BUILD_USERNAME=ij-israfil
+export BUILD_USERNAME=YFMARCO-Dev 
 export BUILD_HOSTNAME=crave
-export TZ=Asia/Dhaka
 echo "======= Export Done ======"
 
 # Set up build environment
@@ -29,7 +28,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch orion_RMX1901-ap2a-user
+lunch orion_gta4l-ap2a-userdebug
 echo "============="
 
 # Make cleaninstall
@@ -37,4 +36,4 @@ make installclean
 echo "============="
 
 # Build rom
-mka space
+mka bacon
