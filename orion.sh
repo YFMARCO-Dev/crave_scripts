@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
- git clone https://github.com/YFMARCO-Dev/crave_manifest.git --depth 1 -b orion-14 .repo/local_manifests 
+git clone https://github.com/YFMARCO-Dev/crave_manifest.git --depth 1 -b orion-14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -19,7 +19,7 @@ echo "============================"
 echo "============================"
 
 # Export
-export BUILD_USERNAME=YFMARCO-Dev 
+export BUILD_USERNAME=YFMARCO-Dev
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
