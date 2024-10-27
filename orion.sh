@@ -37,4 +37,4 @@ make installclean
 echo "============="
 
 # Build rom
-mka space -v
+mka space
