@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone -b rising https://github.com/ij-israfil/local_manifests .repo/local_manifests
+git clone https://github.com/YFMARCO-Dev/crave_manifest.git --depth 1 -b rising-14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -19,9 +19,9 @@ echo "============================"
 echo "============================"
 
 # Export
-export BUILD_USERNAME=ij-israfil
+export BUILD_USERNAME=YFMARCO-Dev
 export BUILD_HOSTNAME=crave
-export TZ=Asia/Dhaka
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
 
 # Set up build environment
@@ -29,7 +29,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_RMX1901-ap2a-user
+lunch lineage_gta4l-ap2a-userdebug
 echo "============="
 
 # Build rom
